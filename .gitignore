@@ -1,0 +1,15 @@
+# Datos y secretos: NUNCA al repositorio
+data/
+.env
+*.pem
+*.key
+
+# Python / entorno
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+pandas
+numpy
+pyarrow
+boto3
+requests
+python-dotenv
+hdbcli
+statsmodels
+scikit-learn
+# Más adelante: fija las versiones (pip freeze) para que el proyecto sea reproducible.

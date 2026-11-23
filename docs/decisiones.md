@@ -6,7 +6,7 @@ Formato: contexto, decisión, por qué, alternativas, estado.
 - **Contexto:** el Advanced Trial no está disponible en México (respuesta de soporte SAP, 20-nov-2026). Se obtuvo acceso con una cuenta trial.
 - **Decisión:** usar la cuenta BTP trial como sandbox personal. Inicio 2026-11-23; vence aprox. 2027-02-21.
 - **Por qué:** es gratis y no requiere tarjeta. No usar VPN ni números de otro país (riesgo de bloqueo y va contra términos).
-- **Riesgo:** la cuenta se creó con un correo de un empleo anterior; si se desactiva, se pierde el acceso. Mitigación: todo el código y la configuración viven en Git.
+- **Riesgo:** Riesgo: el correo asociado a la cuenta podría desactivarse. Mitigación: todo el código y la configuración viven en Git.
 - **Estado:** vigente.
 
 ## D-002 — Región

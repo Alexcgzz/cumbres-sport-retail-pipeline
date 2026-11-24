@@ -20,10 +20,12 @@ Formato: contexto, decisión, por qué, alternativas, estado.
 - Nota: el plan "free" de Datasphere que aparece en videos está deprecado (fin de 2025); usar esos videos solo para conceptos.
 - **Estado:** vigente.
 
-## D-004 — Fuente SAP del Sprint 1
-- **Opciones:** (A) sistema SAP local en Docker; (B) ABAP environment del trial.
-- **Pendiente:** revisar límites del plan `abap-trial` y los recursos de la máquina local (Sistema > Status).
-- **Estado:** abierta.
+## D-004 — Fuente SAP del Sprint 1: sistema ABAP local
+- Decisión: usar el sistema local (ABAP con HANA embebida, cliente 001) como fuente simulada.
+- Por qué: ya corre, no depende de los límites del trial de BTP y permite practicar CDS, ODP y OData.
+- Riesgo: la licencia vence el 21.12.2026; hay que renovarla antes (SLICENSE).
+- Plan B: ABAP environment de BTP (límites sin revisar).
+- Estado: vigente.
 
 ## D-005 — Datos sintéticos con estructura SAP
 - **Decisión:** generar datos simulados con nombres de tablas/campos SAP (T001W, MARA, KNA1, VBRK/VBRP, ACDOCA, CO-PA, POS DW) e inyectar fallas conocidas.
@@ -34,3 +36,5 @@ Formato: contexto, decisión, por qué, alternativas, estado.
 - **Decisión:** no crear instancias en BTP hasta revisar `docs/arquitectura.md`.
 - **Por qué:** el trial tiene límites de tiempo y las instancias de HANA Cloud trial pueden detenerse (verificar el comportamiento).
 - **Estado:** vigente.
+
+## D-007 — ABAP environment del trial BTP: uso opcional para aprender RAP; no se usa como fuente por ser instancia compartida, sin volumen ni exposición externa confiable, y con vida limitada al trial.
